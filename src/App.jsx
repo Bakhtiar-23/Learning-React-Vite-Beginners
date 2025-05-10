@@ -5,12 +5,12 @@ import './styles/App.css';
 import { BrowserRouter as Router, useLocation } from 'react-router-dom';
 import Header from './components/core/Header';
 import Footer from './components/core/Footer';
-import Hero from './pages/HomePage';  // Import the Hero component
+import Hero from './pages/HomePage';  
 import FeedbackForm from './components/community/FeedbackForm';
-import RoutesComponent from './components/RoutesComponent';  // Import the new RoutesComponent
+import RoutesComponent from './components/RoutesComponent';  
 
 function App() {
-  const location = useLocation();  // Get the current location
+  const location = useLocation();  
 
   return (
     <div className="app-container">
@@ -34,3 +34,4 @@ export default function AppWrapper() {
     </Router>
   );
 }
+

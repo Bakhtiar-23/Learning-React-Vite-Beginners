@@ -79,17 +79,17 @@ export default Timer;`;
 
       {/* Main Content */}
       <div className="content-container">
-        <h2 id="intro">Introduction</h2>
+        <h1 id="intro">Introduction</h1>
         <p>
           The `useEffect` hook is one of the most important hooks in React. It allows you to perform side effects in function components, such as fetching data, setting up subscriptions, or manually changing the DOM.
         </p>
 
-        <h2 id="what-is-useEffect">What is useEffect?</h2>
+        <h1 id="what-is-useEffect">What is useEffect?</h1>
         <p>
           `useEffect` is a hook provided by React that lets you perform side effects in function components. Side effects are operations that interact with the outside world, such as making API calls or subscribing to events.
         </p>
 
-        <h2 id="how-useEffect-works">How useEffect Works</h2>
+        <h1 id="how-useEffect-works">How useEffect Works</h1>
         <p>
           By default, the `useEffect` hook runs after every render. However, you can control when it runs by providing a dependency array as the second argument. It can run:
         </p>
@@ -99,7 +99,7 @@ export default Timer;`;
           <li>Only once when the component mounts (by passing an empty array `[]`)</li>
         </ul>
 
-        <h2 id="useEffect-syntax">useEffect Syntax</h2>
+        <h1 id="useEffect-syntax">useEffect Syntax</h1>
         <p>
           The syntax for the `useEffect` hook is as follows:
         </p>
@@ -109,7 +109,7 @@ export default Timer;`;
         </code>
         </pre>
 
-        <h2 id="common-use-cases">Common useEffect Use Cases</h2>
+        <h1 id="common-use-cases">Common useEffect Use Cases</h1>
         <p>
           Some common use cases for `useEffect` include:
         </p>
@@ -131,7 +131,7 @@ export default Timer;`;
           <pre className="code-block"><code>{useEffectExample}</code></pre>
         </div>
 
-        <h3 id="quiz">Try a Quiz!</h3>
+        <h2 id="quiz">Try a Quiz!</h2>
         <div className="lesson-quiz-section">
           <QuizzeNine />
         </div>

@@ -76,10 +76,10 @@ export default Welcome;`;
 
       {/* Main Content */}
       <div className="content-container">
-        <h2 id="intro">Introduction</h2>
+        <h1 id="intro">Introduction</h1>
         <p>When you're learning how to build websites using React, you'll want tools that make development faster, cleaner, and easier. That’s where Vite comes in.</p>
 
-        <h2 id="what-is-react">What is React?</h2>
+        <h1 id="what-is-react">What is React?</h1>
         <p>
           React is a popular open-source JavaScript library developed by Facebook for building user interfaces — especially for single-page applications where performance and responsiveness matter.
         </p>
@@ -90,7 +90,7 @@ export default Welcome;`;
           With React, changes in the application state automatically update the user interface through something called the <strong>Virtual DOM</strong>, which efficiently updates only the parts of the UI that changed.
         </p>
 
-        <h2 id="what-is-vite">What is Vite?</h2>
+        <h1 id="what-is-vite">What is Vite?</h1>
         <p>
           Vite (pronounced "veet") is a next-generation frontend build tool that significantly improves the development experience compared to traditional bundlers like Webpack.
         </p>
@@ -105,7 +105,7 @@ export default Welcome;`;
         </p>
         <pre className="code-block"><code>npm create vite@latest my-app --template react</code></pre>
 
-        <h2 id="why-use-vite-react">Why Use Vite with React?</h2>
+        <h1 id="why-use-vite-react">Why Use Vite with React?</h1>
         <p>
           – <strong>Super Fast Start:</strong> Vite starts your dev server instantly. <br />
           – <strong>Live Changes (Hot Reloading):</strong> You see your edits live as you type. <br />
@@ -113,26 +113,26 @@ export default Welcome;`;
           – <strong>Builds Small & Fast Apps:</strong> Optimized for performance when deploying.
         </p>
 
-        <h2 id="how-vite-react-work">How Do Vite and React Work Together?</h2>
+        <h1 id="how-vite-react-work">How Do Vite and React Work Together?</h1>
         <p>
           – Vite gives you tools to quickly serve and build your project. <br />
           – React lets you build the content, structure, and interactions. <br />
           – Together, they create a blazing-fast and smooth development experience.
         </p>
 
-        <h2 id="lego">Think of React like LEGO</h2>
+        <h1 id="lego">Think of React like LEGO</h1>
         <p>
           Imagine building a house with LEGO blocks. Each block is a reusable part that you can move, stack, and connect. React components work the same way — small, reusable pieces that you put together to build a website.
         </p>
 
-        <h2 id="why-react-useful">Why is React Useful?</h2>
+        <h1 id="why-react-useful">Why is React Useful?</h1>
         <p>
           – <strong>Reusable Pieces:</strong> Build once, reuse anywhere. <br />
           – <strong>Interactive Websites:</strong> Create dynamic interfaces easily. <br />
           – <strong>Organized Code:</strong> Structure your project with clarity.
         </p>
 
-        <h3 id="example">Example</h3>
+        <h2 id="example">Example</h2>
         <div className="code-container">
           <button
             className="copy-button"
@@ -143,7 +143,7 @@ export default Welcome;`;
           <pre className="code-block"><code>{jsExample}</code></pre>
         </div>
 
-        <h3 id="quiz">Try a Quiz!</h3>
+        <h2 id="quiz">Try a Quiz!</h2>
         <div className="lesson-quiz-section">
           <Quizze />
         </div>

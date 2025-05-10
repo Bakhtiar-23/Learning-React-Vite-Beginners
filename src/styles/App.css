@@ -54,7 +54,7 @@ body .glow-center {
   background-color: #030101;
   height: 4cm;
   padding: 0.5rem 1rem;
-  border-bottom: 4px solid #333;
+  border-bottom: 5px solid #333;
   text-align: center;
   z-index: 1000;
   display: flex;
@@ -327,8 +327,8 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  right: 1px;
-  padding: 6rem;
+  right: 15rem;
+  padding: 8rem;
   margin: 0 auto;
   max-width: 100%;
   position: relative;
@@ -571,6 +571,12 @@ h1 {
 h2 {
   font-size: 1.5rem;
   color: #4a5568;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #88aeef;
   margin-bottom: 15px;
 }
 

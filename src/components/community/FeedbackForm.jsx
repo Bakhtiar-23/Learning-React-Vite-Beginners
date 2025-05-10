@@ -54,7 +54,7 @@ export default function FeedbackForm() {
       <div className="feedbacks-container">
         <h4>Recent Feedbacks:</h4>
         {feedbacks.length === 0 ? (
-          <p>No feedbacks yet.</p>
+          <h4>No feedbacks yet.</h4>
         ) : (
           <ul>
             {feedbacks.map((feedbackItem, index) => (

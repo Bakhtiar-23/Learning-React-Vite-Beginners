@@ -15,8 +15,7 @@ import {
 import { CSS } from "@dnd-kit/utilities";
 import '@styles/App.css';
 import gameImage from '@assets/Game.jpg';
-
-import tasks from "../../data/tasks.json"; // Import tasks from the JSON file
+import tasks from "../../data/tasks.json";
 
 function SortableItem({ id }) {
   const {
@@ -52,7 +51,7 @@ const CodeBuilder = () => {
   const [shuffled, setShuffled] = useState([]);
   const [feedback, setFeedback] = useState("");
   const [showNext, setShowNext] = useState(false);
-  const [remainingTasks, setRemainingTasks] = useState(tasks); // Array of tasks that haven't been used yet
+  const [remainingTasks, setRemainingTasks] = useState(tasks);
 
   const sensors = useSensors(useSensor(PointerSensor));
 
@@ -63,17 +62,12 @@ const CodeBuilder = () => {
       return;
     }
 
-    // Randomly select a task from the remaining tasks
     const randomIndex = Math.floor(Math.random() * remainingTasks.length);
     const randomTask = remainingTasks[randomIndex];
-
-    // Remove the selected task from the remaining tasks array
     const newRemainingTasks = remainingTasks.filter((_, index) => index !== randomIndex);
     setRemainingTasks(newRemainingTasks);
 
     setCurrent(randomTask);
-
-    // Shuffle the code parts to make sure the user starts with the wrong order
     setShuffled([...randomTask.codeParts].sort(() => Math.random() - 0.5));
     setFeedback("");
     setShowNext(false);
@@ -110,10 +104,13 @@ const CodeBuilder = () => {
   return (
     <div className="bg-white shadow rounded-xl p-6 w-full max-w-lg">
       <div className="flex justify-between mb-4">
-      <h1 className="text-3xl font-bold mb-6">🧩 Code Builder Game</h1>
-      <div className="image-container">
-        <img src={gameImage} alt="Practice Example" className="practice-image" />
-      </div>
+        <div>
+          <h1 className="text-3xl font-bold mb-2">🧩 Code Builder Game</h1>
+          <p className="text-gray-600 mb-4">Drag and drop the code blocks to form the correct solution</p>
+        </div>
+        <div className="image-container">
+          <img src={gameImage} alt="Practice Example" className="practice-image" />
+        </div>
         <p className="score">🎯 Score: {score}</p>
       </div>
       <p className="text-lg font-semibold mb-2">Task: {current.instruction}</p>
