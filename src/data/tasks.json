@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "type": "JavaScript",
+      "instruction": "Declare a constant named PI with value 3.14.",
+      "solution": "const PI = 3.14;",
+      "codeParts": ["const", "PI", "=", "3.14", ";"]
+    },
+    {
+      "id": 2,
+      "type": "JavaScript",
+      "instruction": "Create an empty array named 'list'.",
+      "solution": "let list = [];",
+      "codeParts": ["let", "list", "=", "[", "]", ";"]
+    },
+    {
+      "id": 3,
+      "type": "JavaScript",
+      "instruction": "Use the typeof operator to log the type of a variable x.",
+      "solution": "console.log(typeof x);",
+      "codeParts": [" ", "console.log", "(", "typeof", "x", ")", ";"]
+    },
+    {
+      "id": 4,
+      "type": "JavaScript",
+      "instruction": "Create a string variable called name with value 'Alice'.",
+      "solution": "let name = 'Alice';",
+      "codeParts": ["let", "name", "=", "'Alice'", ";"]
+    },
+    {
+      "id": 5,
+      "type": "JavaScript",
+      "instruction": "Add 5 to a number x and store it in a variable y.",
+      "solution": "let y = x + 5;",
+      "codeParts": ["let", "y", "=", "x", "+", "5", ";"]
+    },
+    {
+      "id": 6,
+      "type": "JavaScript",
+      "instruction": "Check if a string starts with 'Hi'.",
+      "solution": "console.log(str.startsWith('Hi'));",
+      "codeParts": ["console.log", "(", "str.startsWith", "(", "'Hi'", ")", ")", ";"]
+    },
+    {
+      "id": 7,
+      "type": "JavaScript",
+      "instruction": "Remove the last element from an array.",
+      "solution": "arr.pop();",
+      "codeParts": ["arr", ".", "pop", "(", ")", ";"]
+    },
+    {
+      "id": 8,
+      "type": "JavaScript",
+      "instruction": "Convert a string to uppercase.",
+      "solution": "let upper = str.toUpperCase();",
+      "codeParts": ["let", "upper", "=", "str.toUpperCase", "(", ")", ";"]
+    },
+    {
+      "id": 9,
+      "type": "JavaScript",
+      "instruction": "Check if an array includes number 4.",
+      "solution": "arr.includes(4);",
+      "codeParts": ["arr", ".", "includes", "(", "4", ")", ";"]
+    },
+    {
+      "id": 10,
+      "type": "JavaScript",
+      "instruction": "Get the length of a string.",
+      "solution": "let len = str.length;",
+      "codeParts": ["let", "len", "=", "str", ".", "length", ";"]
+    }
+  ]
+  
