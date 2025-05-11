@@ -1,8 +1,8 @@
-// src/components/PostQuiz.js
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import practicalData from '../../data/curriculum/practicalData';
+import forumImage from "../../assets/Forum.jpg";
+
 
 const getRandomQuestion = () => {
   return practicalData[Math.floor(Math.random() * practicalData.length)];
@@ -49,46 +49,60 @@ const Quizzes = () => {
   };
 
   return (
-    <div className="quiz-container">
-      <h2>Post-Quiz for Lesson 1 (Practical)</h2>
-      <p className="question">{questionData.question}</p>
-      <div className="options">
-        {questionData.options.map((option, idx) => (
-          <label key={idx} className="option-label">
-            <input
-              type="radio"
-              value={option}
-              checked={selectedOption === option}
-              onChange={() => setSelectedOption(option)}
-              disabled={showFeedback}
-            />
-            {option}
-          </label>
-        ))}
+    <div className="quiz-page">
+      {/* Title and Instructions Section */}
+      <div className="quiz-info">
+        <h1>General Quiz - Post Lesson Review</h1>
+        <img src={forumImage} alt="Quiz Banner" className="quiz-banner" />
+        <p>
+          This quiz is taken at the end of each lesson, following both the theory and the practical challenges. 
+          You must answer at least 3 out of 5 questions correctly to proceed to the next lesson.
+        </p>
       </div>
 
-      {!showFeedback ? (
-        <button className="submit-btn" onClick={handleAnswer}>
-          Submit Answer
-        </button>
-      ) : (
-        <>
-          <div className="feedback">
-            {selectedOption === questionData.answer ? (
-              <p className="correct">✅ Correct! {questionData.explanation}</p>
-            ) : (
-              <p className="incorrect">
-                ❌ Incorrect. Correct answer: <strong>{questionData.answer}</strong>. {questionData.explanation}
-              </p>
-            )}
-          </div>
-          <button className="next-btn" onClick={handleNextQuestion}>
-            {quizEnded ? 'Finish Quiz' : 'Next Question'}
-          </button>
-        </>
-      )}
+      {/* Quiz Container */}
+      <div className="quiz-container">
+        <h2>Post-Quiz for Lesson 1 (Practical)</h2>
+        <p className="question">{questionData.question}</p>
 
-      <p className="score">Score: {score.correct}/{score.total}</p>
+        <div className="options">
+          {questionData.options.map((option, idx) => (
+            <label key={idx} className="option-label">
+              <input
+                type="radio"
+                value={option}
+                checked={selectedOption === option}
+                onChange={() => setSelectedOption(option)}
+                disabled={showFeedback}
+              />
+              {option}
+            </label>
+          ))}
+        </div>
+
+        {!showFeedback ? (
+          <button className="submit-btn" onClick={handleAnswer}>
+            Submit Answer
+          </button>
+        ) : (
+          <>
+            <div className="feedback">
+              {selectedOption === questionData.answer ? (
+                <p className="correct">✅ Correct! {questionData.explanation}</p>
+              ) : (
+                <p className="incorrect">
+                  ❌ Incorrect. Correct answer: <strong>{questionData.answer}</strong>. {questionData.explanation}
+                </p>
+              )}
+            </div>
+            <button className="next-btn" onClick={handleNextQuestion}>
+              {quizEnded ? 'Finish Quiz' : 'Next Question'}
+            </button>
+          </>
+        )}
+
+        <p className="score">Score: {score.correct}/{score.total}</p>
+      </div>
     </div>
   );
 };

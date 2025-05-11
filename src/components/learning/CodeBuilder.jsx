@@ -14,7 +14,7 @@ import {
 } from "@dnd-kit/sortable";
 import { CSS } from "@dnd-kit/utilities";
 import '@styles/App.css';
-import gameImage from '@assets/Game.jpg';
+import gameImage from '@assets/Game2.jpg';
 import tasks from "../../data/tasks.json";
 
 function SortableItem({ id }) {
@@ -106,32 +106,43 @@ const CodeBuilder = () => {
       <div className="flex justify-between mb-4">
         <div>
           <h1 className="text-3xl font-bold mb-2">🧩 Code Builder Game</h1>
-          <p className="text-gray-600 mb-4">Drag and drop the code blocks to form the correct solution</p>
+          <p className="text-gray-600 mb-4">
+            Drag and drop the code blocks to form the correct solution.<br></br>
+            Read the task carefully from the left-hand game preview.<br />
+            Drag and drop the code blocks to form the correct line of code.<br />
+            Once the solution is correct, proceed to the next task!
+          </p>
         </div>
-        <div className="image-container">
-          <img src={gameImage} alt="Practice Example" className="practice-image" />
+        <div className=".quiz-banner">
+          <img src={gameImage} alt="Quiz Banner" className="quiz-banner" />
+          <p className="score">🎯 Score: {score}</p>
         </div>
-        <p className="score">🎯 Score: {score}</p>
+        
       </div>
       <p className="text-lg font-semibold mb-2">Task: {current.instruction}</p>
       <p className="text-sm mb-4 text-gray-500">Type: {current.type}</p>
 
-      <DndContext
-        sensors={sensors}
-        collisionDetection={closestCenter}
-        onDragEnd={handleDragEnd}
-      >
-        <SortableContext
-          items={shuffled}
-          strategy={verticalListSortingStrategy}
-        >
-          <div className="flex flex-wrap gap-2 mb-4">
-            {shuffled.map((item,) => (
-              <SortableItem key={item} id={item} />
-            ))}
-          </div>
-        </SortableContext>
-      </DndContext>
+      <div className="game-environment">
+        <div className="game-container">
+          <DndContext
+            sensors={sensors}
+            collisionDetection={closestCenter}
+            onDragEnd={handleDragEnd}
+          >
+            <SortableContext
+              items={shuffled}
+              strategy={verticalListSortingStrategy}
+            >
+              <div className="flex flex-wrap gap-2 mb-4">
+                {shuffled.map((item) => (
+                  <SortableItem key={item} id={item} />
+                ))}
+              </div>
+            </SortableContext>
+          </DndContext>
+        </div>
+      </div>
+
 
       <p className="text-green-600 font-bold mb-2">{feedback}</p>
 

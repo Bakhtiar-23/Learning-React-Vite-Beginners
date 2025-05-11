@@ -665,6 +665,25 @@ button:hover {
 }
 
 /* Game Over Container */
+.game-environment {
+  background: linear-gradient(to bottom right, #1b3940, #613659); /* Deep gradient */
+  padding: 2rem;
+  border-radius: 20px;
+  border: 4px solid #7da10a;
+  width: 100%;
+  max-width: 1400px; /* So it doesn't get too wide */
+  margin: 0 auto; /* Center on page */
+  box-shadow: 0 0 30px rgba(53, 197, 226, 0.4); /* Glow effect */
+}
+
+.game-container {
+  background-color: #1e3f465f; /* Semi-transparent inner panel */
+  padding: 1.5rem;
+  border-radius: 20px;
+  border: 1px solid #b3db2e;
+}
+
+
 .game-over-container {
   text-align: center;
 }
@@ -877,6 +896,26 @@ button:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.quiz-info {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.quiz-info h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.quiz-banner {
+  max-width: 100%;
+  height: 700px;
+  justify-content: center;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
 .question {
   font-size: 18px;
   margin-bottom: 1rem;
@@ -931,3 +970,16 @@ button:hover {
   margin-top: 1.5rem;
   font-weight: bold;
 }
+
+.forum-header {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #040404;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.forum-header h1 {
+  margin-bottom: 0.5rem;
+}
+
