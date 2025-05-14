@@ -106,12 +106,15 @@ const CodeBuilder = () => {
       <div className="flex justify-between mb-4">
         <div>
           <h1 className="text-3xl font-bold mb-2">🧩 Code Builder Game</h1>
-          <p className="text-gray-600 mb-4">
-            Drag and drop the code blocks to form the correct solution.<br></br>
-            Read the task carefully from the left-hand game preview.<br />
-            Drag and drop the code blocks to form the correct line of code.<br />
-            Once the solution is correct, proceed to the next task!
-          </p>
+          <p className="text-gray-600 mb-4"></p>
+          <ul>
+            <li>Drag and drop the code blocks to form the correct solution.</li>
+            <li>Read the task carefully from the left-hand game preview.</li>
+            <li>Drag and drop the code blocks to form the correct line of code.</li>
+            <li>Once the solution is correct, proceed to the next task!</li>
+          </ul>
+            
+          
         </div>
         <div className=".quiz-banner">
           <img src={gameImage} alt="Quiz Banner" className="quiz-banner" />

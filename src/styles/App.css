@@ -661,7 +661,7 @@ button:hover {
 /* Timer and attempts */
 .mt-4 p {
   font-size: 1.2rem;
-  color: #4a5568;
+  color: #365790;
 }
 
 /* Game Over Container */
@@ -670,7 +670,7 @@ button:hover {
   padding: 2rem;
   border-radius: 20px;
   border: 4px solid #7da10a;
-  width: 100%;
+  width: 80%;
   max-width: 1400px; /* So it doesn't get too wide */
   margin: 0 auto; /* Center on page */
   box-shadow: 0 0 30px rgba(53, 197, 226, 0.4); /* Glow effect */
@@ -908,7 +908,7 @@ button:hover {
 
 .quiz-banner {
   max-width: 100%;
-  height: 700px;
+  height: 500px;
   justify-content: center;
   margin-bottom: 15px;
   border-radius: 12px;
