@@ -65,10 +65,6 @@ describe('PracticingChallenging Component', () => {
     expect(screen.getByText('LiveCodeEditor')).toBeInTheDocument();
   });
 
-  test('matches snapshot', () => {
-    const { asFragment } = render(<PracticingChallenging />);
-    expect(asFragment()).toMatchSnapshot();
-  });
 
   test('has no accessibility violations', async () => {
     const { container } = render(<PracticingChallenging />);

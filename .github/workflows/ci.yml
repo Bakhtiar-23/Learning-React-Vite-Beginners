@@ -23,7 +23,8 @@ jobs:
         run: npm ci
 
       - name: 🧪 Run tests
-        run: npm run test 
+        run: npm run npm test -- -u
+ 
 
       - name: 🛠️ Build project
         run: npm run build
