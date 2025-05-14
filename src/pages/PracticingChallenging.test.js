@@ -10,7 +10,10 @@ expect.extend(toHaveNoViolations);
 jest.mock('../components/learning/LiveCodeEditor', () => () => (
   <div>LiveCodeEditor</div>
 ));
-jest.mock('../assets/practice.jpg', () => 'test-image-path');
+jest.mock('../assets/practice.jpg', () => {
+    return jest.requireActual('../../__mocks__/fileMock.js');
+  });
+  
 
 describe('PracticingChallenging Component', () => {
   const mockStepProps = {

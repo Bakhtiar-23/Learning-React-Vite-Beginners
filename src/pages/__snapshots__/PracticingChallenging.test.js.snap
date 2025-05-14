@@ -14,7 +14,7 @@ exports[`PracticingChallenging Component matches snapshot 1`] = `
       <img
         alt="Practice Example"
         class="practice-image"
-        src="test-image-path"
+        src="test-file-stub"
       />
     </div>
     <section
