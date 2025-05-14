@@ -2,7 +2,7 @@
   "name": "learning-react-vite-platform",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -24,8 +24,8 @@
   "devDependencies": {
     "@axe-core/react": "^4.10.1",
     "@babel/core": "^7.27.1",
-    "@babel/preset-env": "^7.24.0",
-    "@babel/preset-react": "^7.24.0",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
     "@eslint/js": "^9.25.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
