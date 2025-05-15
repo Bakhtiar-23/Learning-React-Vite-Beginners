@@ -10,7 +10,10 @@
     "preview": "vite preview",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+    
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
@@ -48,12 +51,13 @@
     "vite": "^6.3.5"
   },
   "jest": {
-    "testEnvironment": "jsdom",
-    "transform": {
-      "^.+\\.[jt]sx?$": "babel-jest"
-    },
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.[jt]sx?$": "babel-jest"
+  },
     "moduleNameMapper": {
       "^@/(.*)$": "<rootDir>/src/$1",
+      "\\.(jpg|jpeg|png|gif|svg)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less|scss|sass)$": "identity-obj-proxy"
     },
     "setupFilesAfterEnv": [
