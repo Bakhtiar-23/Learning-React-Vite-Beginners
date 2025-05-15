@@ -9,7 +9,7 @@ const __dirname = dirname(__filename);
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/learn-react-vite-platform/",
+  base: "/Learning-React-Vite-Beginners/",
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
