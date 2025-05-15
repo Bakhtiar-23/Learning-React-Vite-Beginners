@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import LiveCodeEditor from '../components/learning/LiveCodeEditor';
-import practiceImage from '../assets/practice.jpg';
+import practiceImage from '../assets/Practice.jpg';
 import '@styles/App.css';
 
 // Step component definition

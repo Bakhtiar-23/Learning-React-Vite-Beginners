@@ -4,7 +4,7 @@ import PracticingChallenging, { Step } from './PracticingChallenging';
 
 // Mock child components and assets
 jest.mock('../components/learning/LiveCodeEditor', () => () => <div>LiveCodeEditor</div>);
-jest.mock('../assets/practice.jpg', () => 'test-file-stub');
+jest.mock('../assets/Practice.jpg', () => 'test-file-stub');
 
 describe('PracticingChallenging Component', () => {
   const mockStepProps = {
