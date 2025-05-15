@@ -32,7 +32,8 @@ export default function FeedbackForm() {
   return (
     <div className="feedback-container">
       <form className="feedback-form" onSubmit={handleSubmit}>
-        <h3>Send Us Your Feedback</h3>
+        <h1>Send Us Your Feedback</h1>
+        <label for="name">Your Name</label>
         <input
           type="text"
           placeholder="Your Name"
@@ -40,6 +41,7 @@ export default function FeedbackForm() {
           value={name}
           onChange={handleNameChange}
         />
+        <label for="feedback">Your Feedback</label>
         <textarea
           placeholder="Your Feedback"
           className="feedback-textarea"
