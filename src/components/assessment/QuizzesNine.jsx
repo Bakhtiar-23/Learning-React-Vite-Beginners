@@ -17,7 +17,7 @@ const QuizzeNine = () => {
   const handleAnswer = () => {
     if (!selectedOption) return;
 
-    const isCorrect = selectedOption === questionData.answer;
+    const isCorrect = selectedOption === questionData.Answer;
     const newScore = {
       correct: score.correct + (isCorrect ? 1 : 0),
       total: score.total + 1,
