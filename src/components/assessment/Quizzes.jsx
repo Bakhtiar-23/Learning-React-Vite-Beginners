@@ -34,7 +34,7 @@ const Quizze = () => {
   const handleNextQuestion = () => {
     if (quizEnded) {
       // Navigate if passed, else stay or show retry option
-      if (score.correct >= 3) {
+      if (score.correct >= 4) {
         navigate('/lesson/2');
       } else {
         alert('You did not pass the quiz. Try again!');

@@ -34,7 +34,7 @@ const QuizzeNine = () => {
   const handleNextQuestion = () => {
     if (quizEnded) {
       // Navigate if passed, else stay or show retry option
-      if (score.correct >= 3) {
+      if (score.correct >= 4) {
         navigate('/lesson/10');
       } else {
         alert('You did not pass the quiz. Try again!');
@@ -76,11 +76,11 @@ const QuizzeNine = () => {
       ) : (
         <>
           <div className="feedback">
-            {selectedOption === questionData.answer ? (
+            {selectedOption === questionData.Answer ? (
               <p className="correct">✅ Correct! {questionData.explanation}</p>
             ) : (
               <p className="incorrect">
-                ❌ Incorrect. Correct answer: <strong>{questionData.answer}</strong>. {questionData.explanation}
+                ❌ Incorrect. Correct answer: <strong>{questionData.Answer}</strong>. {questionData.explanation}
               </p>
             )}
           </div>
